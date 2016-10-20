@@ -57,7 +57,8 @@ public class Starter {
 		}
 		
 		
-		double kosten = flaesche * hoehe * anzahl * VOLUMENFAKTOR * jahr;
+		double kosten = flaesche * hoehe * anzahl * VOLUMENFAKTOR * faktor;
+		System.out.println("Kosten: " + kosten);
 		
 	}
 
