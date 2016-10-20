@@ -32,6 +32,33 @@ public class Starter {
 			
 		} 
 		
+		int flaesche = Integer.parseInt(val[0]);
+		int hoehe = Integer.parseInt(val[1]);
+		int anzahl = Integer.parseInt(val[2]);
+		int jahr = Integer.parseInt(val[3]);
+		
+		final double VOLUMENFAKTOR = 3.7;
+		double faktor = 0.0;
+		
+		switch(jahr){
+			case 1: faktor = 5.0;
+			break;
+			case 2: faktor = 3.0;
+			break;
+			case 3: faktor = 1.8;
+			break;
+			case 4: faktor = 1.0;
+			break;
+			case 5: faktor = 0.7;
+			break;
+			case 6: faktor = 0.3;
+			break;
+			
+		}
+		
+		
+		double kosten = flaesche * hoehe * anzahl * VOLUMENFAKTOR * jahr;
+		
 	}
 
 }
